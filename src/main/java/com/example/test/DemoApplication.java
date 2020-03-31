@@ -11,16 +11,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class DemoApplication {
 
-	@RequestMapping("/")
-	public String home() {
-	 return "Hello Spring Boot";
-	}
-	// 추가로 신규 url 추가
-	@RequestMapping("/new")
-	public String newMethod() {
-	 return "New Url";
-	}
-
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}

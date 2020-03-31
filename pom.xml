@@ -28,6 +28,19 @@
 			<artifactId>spring-boot-starter-webflux</artifactId>
 		</dependency>
 
+		<dependency> 
+			<groupId>org.apache.tomcat.embed</groupId> 
+			<artifactId>tomcat-embed-jasper</artifactId> 
+			<scope>provided</scope> 
+		</dependency>
+		<!-- 위 아래코드는 JSP의 구동을 위해 jasper의존성 추가 --> 
+		<!-- jstl 라이브러리 --> 
+		<dependency> 
+			<groupId>javax.servlet</groupId> 
+			<artifactId>jstl</artifactId> 
+		</dependency>
+
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
