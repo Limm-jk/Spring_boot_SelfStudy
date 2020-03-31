@@ -54,10 +54,11 @@
 
 	<build>
 		<plugins>
-			<plugin>
+			<plugin> 
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<!-- 빌드 플러그 인 -->
 		</plugins>
 	</build>
 
