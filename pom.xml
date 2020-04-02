@@ -39,6 +39,14 @@
 			<groupId>javax.servlet</groupId> 
 			<artifactId>jstl</artifactId> 
 		</dependency>
+		<!-- jsp컴파일러 -->
+		<dependency>
+			<groupId>org.eclipse.jdt.core.compiler</groupId>
+			<artifactId>ecj</artifactId>
+			<version>4.6.1</version>
+			<scope>provided</scope>
+		</dependency>
+
 		<!-- 서버 재시작 없이 적용하기 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
