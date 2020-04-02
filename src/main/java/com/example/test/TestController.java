@@ -10,23 +10,23 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class TestController{
 
-    @RequestMapping("/home")
-    public String home(){
-        return "test";
-    }
-    // @RequestMapping("/")
-    // public ModelAndView test() throws Exception{
-    //     ModelAndView mav = new ModelAndView("test");
-    //     mav.addObject("name", "limmjk");
-
-    //     ArrayList<String> testList = new ArrayList<String>();
-    //     testList.add("a");
-    //     testList.add("b");
-    //     testList.add("c");
-
-    //     mav.addObject("list", testList);
-    //     return mav;
+    // @RequestMapping("/home")
+    // public String home(){
+    //     return "test";
     // }
+    @RequestMapping("/")
+    public ModelAndView test() throws Exception{
+        ModelAndView mav = new ModelAndView("test");
+        mav.addObject("name", "limmjk");
+
+        ArrayList<String> testList = new ArrayList<String>();
+        testList.add("a");
+        testList.add("b");
+        testList.add("c");
+
+        mav.addObject("list", testList);
+        return mav;
+    }
 
     // @ResponseBody
     // @RequestMapping("/valueTest")
