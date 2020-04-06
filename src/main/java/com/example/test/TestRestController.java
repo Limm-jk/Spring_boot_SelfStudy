@@ -1,20 +1,22 @@
-// package com.example.test;
-// //import com.god.bo.test.service.TestService; 
-// import org.springframework.beans.factory.annotation.Autowired; 
-// import org.springframework.web.bind.annotation.RequestMapping; 
-// import org.springframework.web.bind.annotation.RequestMethod; 
-// import org.springframework.web.bind.annotation.RestController;
+package com.example.test;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+//import com.god.bo.test.service.TestService; 
+import org.springframework.beans.factory.annotation.Autowired; 
+import org.springframework.web.bind.annotation.RequestMapping; 
+import org.springframework.web.bind.annotation.RequestMethod; 
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.GetMapping;
 
 
-// @RestController
-// public class TestRestController{
+@RestController
+public class TestRestController{
 
-//     @Autowired
-//     //TestService testservice;
+    @Autowired
+    //TestService testservice;
 
-//     @RequestMapping(value ="/valueTest", method = RequestMethod.GET)
-//     public String valueTest(){
-//         String value = "레스트 컨트롤러 테스트";
-//         return value;
-//     }
-// }
+    @GetMapping(path = "/home")
+    public String home(){
+        return LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME);
+    }
+}

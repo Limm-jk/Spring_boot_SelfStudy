@@ -1,4 +1,6 @@
 package com.example.test;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 import org.springframework.stereotype.Controller;
@@ -10,10 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class TestController{
 
-    // @RequestMapping("/home")
-    // public String home(){
-    //     return "test";
-    // }
+    
     @RequestMapping("/")
     public ModelAndView test() throws Exception{
         ModelAndView mav = new ModelAndView("test");
